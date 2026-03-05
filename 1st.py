@@ -53,7 +53,7 @@ for i in range(len(df)):
 
     # ---- COLOR & MESSAGE LOGIC ----
     if percentage < 50:
-        color = "red"
+        color = "black"
         message = "LOW ATTENDANCE - RISK ZONE"
 
     elif percentage <= 75:
@@ -78,7 +78,7 @@ for i in range(len(df)):
         ax.pie(
             values,
             startangle=90,
-            colors=[color, "#E0E0E0"],
+            colors=[color,"#E0E0E0"],
             wedgeprops={"width": ring_width}
         )
 
@@ -107,7 +107,7 @@ values2 = [overall, 100 - overall]
 
 # Overall color logic
 if overall < 50:
-    overall_color = "red"
+    overall_color = "black"
 elif overall <= 75:
     overall_color = "orange"
 else:
