@@ -57,7 +57,7 @@ for i in range(len(df)):
         message = "LOW ATTENDANCE - RISK ZONE"
 
     elif percentage <= 75:
-        color = "blue"
+        color = "orange"
         message = "REQUIREMENT NOT MET - NEED MORE ATTENDANCE"
 
     else:
@@ -109,7 +109,7 @@ values2 = [overall, 100 - overall]
 if overall < 50:
     overall_color = "red"
 elif overall <= 75:
-    overall_color = "blue"
+    overall_color = "orange"
 else:
     overall_color = "green"
 
